@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file.xslt" ?>
+<solar_system_planets>
+    <planet id="1">
+        <name>Mercury</name>
+        <size>74.8 millions km^2</size>
+    </planet>
+
+    <planet id="2">
+        <name>Venus</name>
+        <size>460.234 millions km^2</size>
+    </planet>
+
+    <planet id="3">
+        <name>Earth</name>
+        <size>510.072 millions km^2</size>
+        <satellites id_s="1">
+            <name_s>Moon</name_s>
+            <size_s>38 millions km^2</size_s>
+        </satellites>
+    </planet>
+
+    <planet id="4">
+        <name>Mars</name>
+        <size>144 millions km^2</size>
+        <satellites id_s="1">
+            <name_s>Phobos</name_s>
+            <size_s>1600 km^2</size_s>
+        </satellites>
+
+        <satellites id_s="2">
+            <name_s>Deimos</name_s>
+            <size_s>Unknown</size_s>
+        </satellites>
+    </planet>
+
+    <planet id="5">
+        <name>Jupiter</name>
+        <size>6,21796⋅10^10 km^2</size>
+
+        <satellites id_s="1">
+            <name_s>Io</name_s>
+            <size_s>41.91 millions km^2</size_s>
+        </satellites>
+
+        <satellites id_s="2">
+            <name_s>Europe</name_s>
+            <size_s>30.61 millions km^2</size_s>
+        </satellites>
+
+        <satellites id_s="3">
+            <name_s>Ganymede</name_s>
+            <size_s>87 millions km^2</size_s>
+        </satellites>
+
+        <satellites id_s="4">
+            <name_s>Callisto</name_s>
+            <size_s>73 millions km^2</size_s>
+        </satellites>
+    </planet>
+
+    <planet id="6">
+        <name>Saturn</name>
+        <size>4,272·10^10 km^2</size>
+
+        <satellites id_s="1">
+            <name_s>Titan</name_s>
+            <size_s>83 millions km^2</size_s>
+        </satellites>
+
+        <satellites id_s="2">
+            <name_s>Rhea</name_s>
+            <size_s>7.3 millions km^2</size_s>
+        </satellites>
+
+        <satellites id_s="3">
+            <name_s>Iapetus</name_s>
+            <size_s>6.7 millions km^2</size_s>
+        </satellites>
+
+        <satellites id_s="4">
+            <name_s>Mimas</name_s>
+            <size_s>494 000 km^2</size_s>
+        </satellites>
+    </planet>
+
+    <planet id="7">
+        <name>Uranus</name>
+        <size>8,1156*10^9 km^2</size>
+
+        <satellites id_s="1">
+            <name_s>Titania</name_s>
+            <size_s>7.82 millions km^2</size_s>
+        </satellites>
+
+        <satellites id_s="2">
+            <name_s>Miranda</name_s>
+            <size_s>698 170 km^2</size_s>
+        </satellites>
+    </planet>
+
+    <planet id="8">
+        <name>Neptune</name>
+        <size>7,6408⋅10^9 km^2</size>
+
+        <satellites id_s="1">
+            <name_s>Triton</name_s>
+            <size_s>23.018 millions km^2</size_s>
+        </satellites>
+
+        <satellites id_s="2">
+            <name_s>Nereid</name_s>
+            <size_s>363 168 km^2</size_s>
+        </satellites>
+    </planet>
+</solar_system_planets>

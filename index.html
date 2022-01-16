@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--//задаем кодировку документа -->
+  <!--link href="style.css" rel="stylesheet"-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Пример работы с веб соккетом</title>
+</head>
+<body>
+<!--<XML id="dsoBook" src="file.xml"></XML> -->
+
+  Iam webSocket
+  <div id="elem1"></div>
+  <input type='text' id ='input'>  
+  <!--input type='button' value="send"       onchange="mesend(input.value)"-->
+  <script>
+    //создаем клиентский веб соккет
+    let ws = new WebSocket("ws://localhost:10556/data");
+    //const inp = document.querySelector("text")
+    // обработка асинхронного события появления сообщения от сервера
+    ws.onmessage = ({data}) => {
+         //парсим строку посланную вебсокетом сервера из таймера
+         jsmsg = JSON.parse(data)
+         //выводим счетчик в элемент div (поле data)
+         document.getElementById('elem1').innerHTML = jsmsg.data;
+    }
+    //input.text.oninput = function() {
+    //  msg = JSON.stringify({data: input.value});
+    //  ws.onopen = () => ws.send(msg)
+    //}
+    input.addEventListener('change', (event) =>{
+      msg = JSON.stringify({data: event.target.value});
+      
+      console.log(msg);
+      ws.send(msg)
+      input.value =''
+    });
+       
+  </script>
+</body>
+</html>
+
+<!--<HTML>-->
+<!--<HEAD>-->
+<!--  <TITLE>Book Description</TITLE>-->
+<!--</HEAD>-->
+<!--<BODY>-->
+<!--  <XML ID="dsoBook" SRC="file.xml"></XML>-->
+
+<!--</BODY>-->
+<!--</HTML>-->
